@@ -42,7 +42,7 @@ int threshold;
         write_grade_in_tab(tab_threshold,evaluation_number_threshold);
         write_grade_in_tab(tab_non_threshold,evaluation_number_non_threshold);
 
-        // pour le test de github
+        // pour le test de githubdd
         for (int i = 0; i < evaluation_number_threshold; i++)
         {
             printf("%lf\n",tab_threshold[i]);
