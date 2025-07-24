@@ -38,18 +38,24 @@ int threshold;
 
         double* tab_threshold = creer_tableau1d(evaluation_number_threshold);
         double* tab_non_threshold = creer_tableau1d(evaluation_number_non_threshold);
+        double* tab_threshold_pond = creer_tableau1d(evaluation_number_threshold);
+        double* tab_non_threshold_pond = creer_tableau1d(evaluation_number_non_threshold);
 
         write_grade_in_tab(tab_threshold,evaluation_number_threshold);
+        write_pond_in_tab(tab_threshold,evaluation_number_threshold);
         write_grade_in_tab(tab_non_threshold,evaluation_number_non_threshold);
+        write_pond_in_tab(tab_non_threshold,evaluation_number_non_threshold);
+
+
 
         // pour le test de githubdd
         for (int i = 0; i < evaluation_number_threshold; i++)
         {
-            printf("%lf\n",tab_threshold[i]);
+            printf("%lf/%lf\n",tab_threshold[i],tab_threshold_pond[i]);
         }
         for (int i = 0; i < evaluation_number_non_threshold; i++)
         {
-            printf("%lf\n",tab_non_threshold[i]);
+            printf("%lf/%lf\n",tab_non_threshold[i],tab_non_threshold_pond[i]);
         }
 
         free(tab_threshold);

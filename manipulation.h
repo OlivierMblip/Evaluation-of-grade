@@ -45,4 +45,6 @@ void liberer_tab1d(int* tabld);
 
 double* write_grade_in_tab(double* tab,int number_of_result);
 
+double* write_pond_in_tab(double* tab,int number_of_result);
+
 #endif

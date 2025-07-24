@@ -76,6 +76,19 @@ double* write_grade_in_tab(double* tab,int number_of_result)
     }
     return tab;
 }
+
+//
+//Commentaire rapidos sur la fonction
+//
+double* write_pond_in_tab(double* tab,int number_of_result)
+{
+    for (int i = 0; i < number_of_result; i++)
+    {
+        printf("Enter value of ponderation");
+        scanf("%lf",&tab[i]);
+    }
+    return tab;
+}
 /****************************************************************************************
 *                           DÉFINITION DES FONCTIONS PRIVÉES                            *
 ****************************************************************************************/
